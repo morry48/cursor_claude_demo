@@ -28,6 +28,11 @@ const Page: NextPage<Props> = (props) => {
     websiteUrl,
   } = props.member;
 
+  // 人気記事を選定（ここでは単純に最初の2記事を表示）
+  const popularPosts = props.postItems.slice(0, 2);
+  // 残りの記事をArticleセクションに表示
+  const restPosts = props.postItems;
+
   return (
     <>
       <PageSEO
@@ -83,8 +88,14 @@ const Page: NextPage<Props> = (props) => {
             </div>
           </header>
 
+          <div className="popular-posts-container">
+            <h2 className="section-heading">Popular</h2>
+            <PostList items={popularPosts} />
+          </div>
+
           <div className="member-posts-container">
-            <PostList items={props.postItems} />
+            <h2 className="section-heading">Articles</h2>
+            <PostList items={restPosts} />
           </div>
         </ContentWrapper>
       </section>
