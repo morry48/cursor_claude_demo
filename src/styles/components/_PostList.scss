@@ -92,6 +92,27 @@ $transition-speed: 0.2s;
   margin-right: 8px;
 }
 
+/* いいね数表示のスタイル */
+.post-link__likes {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  color: var(--color-primary-text);
+  background-color: rgba(255, 126, 95, 0.1);
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.post-link__likes-icon {
+  margin-right: 3px;
+}
+
+.post-link__likes-count {
+  font-size: 11px;
+  line-height: 1;
+}
+
 .post-link__new-label {
   position: absolute;
   right: 12px;
