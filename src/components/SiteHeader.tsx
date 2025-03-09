@@ -10,9 +10,10 @@ export const SiteHeader: React.FC = () => (
         <Link href="/" passHref>
           <a className="site-header__logo-link">
             <img
-              src="/logo.svg"
+              src="/avatars/catnose.jpg"
               alt={config.siteMeta.title}
               className="site-header__logo-img"
+              style={{ borderRadius: "50%" }}
             />
           </a>
         </Link>
