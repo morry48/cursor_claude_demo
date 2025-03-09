@@ -1,9 +1,13 @@
 .home-hero {
   padding: 2.7rem 0 2rem;
+  background: linear-gradient(to right, var(--color-accent-light), rgba(255, 126, 95, 0.08));
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 1rem;
 }
 .home-hero__title {
   font-size: 3.1rem;
   line-height: 1.4;
+  color: var(--color-base-text);
   @include mq(xs) {
     font-size: 2.6rem;
   }
@@ -27,6 +31,10 @@
 .home-section-link {
   font-size: 1.1rem;
   color: var(--color-primary-text);
+  
+  &:hover {
+    text-decoration: underline;
+  }
 }
 .home-members {
   padding: 3rem 0;
@@ -75,7 +83,60 @@
   display: inline-block;
   width: 5px;
   height: 1.2em;
-  background: var(--color-primary-background);
+  background: var(--color-accent);
   border-radius: 2.5px;
   margin-right: 0.8rem;
+}
+
+/* メンバーヘッダースタイル */
+.member-header {
+  padding: 2.5rem 0;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--color-accent-light));
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.member-header__avatar-img {
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.member-header__name {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  color: var(--color-base-text);
+}
+
+.member-header__bio {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  max-width: 500px;
+  color: var(--color-base-text-lighter);
+}
+
+.member-header__links {
+  margin-top: 1rem;
+}
+
+.member-header__link {
+  margin: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  color: var(--color-primary-text);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    color: var(--color-primary-background);
+  }
 }
