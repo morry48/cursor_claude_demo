@@ -28,8 +28,8 @@ const Page: NextPage<Props> = (props) => {
     websiteUrl,
   } = props.member;
 
-  // 人気記事を選定（ここでは単純に最初の2記事を表示）
-  const popularPosts = props.postItems.slice(0, 2);
+  // 人気記事を選定（ここでは単純に最初の3記事を表示）
+  const popularPosts = props.postItems.slice(0, 3);
   // 残りの記事をArticleセクションに表示
   const restPosts = props.postItems;
 
