@@ -71,6 +71,42 @@
   margin-right: 0.8rem;
 }
 
+/* 人気記事は3列レイアウト */
+.popular-posts-container .post-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  
+  .post-link {
+    width: calc(33.33% - 0.7rem);
+    margin-top: 0;
+    
+    @include mq(sm) {
+      width: 100%;
+      margin-top: 1.3rem;
+    }
+  }
+  
+  /* 人気記事カードのコンパクトスタイル */
+  .post-link__author {
+    padding: 1.2rem 1.2rem 0;
+  }
+  
+  .post-link__main-link {
+    padding: 0.8rem 1.2rem 1.3rem;
+  }
+  
+  .post-link__title {
+    font-size: 1rem;
+  }
+  
+  .post-link__author-img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 /* Articlesセクションのスタイル */
 .member-posts-container {
   margin-top: 1.5rem;
