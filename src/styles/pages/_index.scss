@@ -35,18 +35,47 @@
   margin-top: 2rem;
 }
 
+/* 共通の見出しスタイル */
 .section-heading {
-  font-size: 1.7rem;
-  padding: 0.3rem 0;
-  margin-bottom: 1.5rem;
-  border-bottom: solid 1px var(--color-border);
+  font-size: 1.8rem;
+  padding: 0.5rem 0;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-base-text);
+  display: flex;
+  align-items: center;
 }
 
+/* Popularセクションのスタイル */
 .popular-posts-container {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
 }
 
+.popular-posts-container .section-heading::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 1.2em;
+  background: var(--color-primary-background);
+  border-radius: 2.5px;
+  margin-right: 0.8rem;
+}
+
+/* Articlesセクションのスタイル */
 .member-posts-container {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: solid 1px var(--color-border);
+}
+
+.member-posts-container .section-heading::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 1.2em;
+  background: var(--color-primary-background);
+  border-radius: 2.5px;
+  margin-right: 0.8rem;
 }
