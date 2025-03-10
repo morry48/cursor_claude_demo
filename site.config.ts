@@ -1,8 +1,8 @@
 export const config = {
   siteMeta: {
-    title: "Team Blog Hub",
+    title: "CatNose Blog",
     teamName: "catnose Inc.",
-    description: "RSS based blog starter kit for teams.",
+    description: "CatNoseのブログです。デザインが好きなプログラマー。",
   },
   siteRoot:
     process.env.NODE_ENV === "production"
@@ -10,16 +10,12 @@ export const config = {
       : "http://localhost:3000",
   headerLinks: [
     {
-      title: "About",
+      title: "About CatNose",
       href: "/about",
     },
     {
-      title: "Company",
-      href: "https://zenn.dev/catnose99/articles/cb72a73368a547756862",
-    },
-    {
       title: "GitHub",
-      href: "https://github.com/catnose99/team-blog-hub",
+      href: "https://github.com/catnose99",
     },
   ],
 };

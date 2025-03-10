@@ -12,21 +12,20 @@ const Page: NextPage = () => {
           <h1 className="about__title">About</h1>
           <div className="about__body">
             <p>
-              このサイトはチームのためのブログスターター
-              <a href="https://github.com/catnose99/team-blog-hub">
-                Team Blog Hub
-              </a>
-              のデモです。ブログのRSSのURLを登録することで、チームメンバーの投稿を一覧にまとめて表示します。
+              このサイトはCatNoseのブログです。デザインが好きなプログラマーとして、主にフロントエンド開発やデザインに関する記事を発信しています。
             </p>
             <p>
-              Medium、note、Zenn、Qiita、はてなブログなど、RSSフィードを取得できるサイトであれば、メンバーは好きな場所に投稿できます。
+              開発者向けの情報共有プラットフォームzenn.devを開発しており、技術的な知見や経験を共有することでエンジニアコミュニティに貢献したいと考えています。
             </p>
             <p>
-              詳しくは
-              <a href="https://zenn.dev/catnose99/articles/cb72a73368a547756862">
-                チーム個々人のテックブログをRSSで集約するサイトをNext.jsで作った
-              </a>
-              をご覧ください。
+              Medium、Zennなど複数のプラットフォームに投稿した記事をこのサイトで一覧にまとめて表示しています。
+            </p>
+            <p>
+              お問い合わせやお仕事のご依頼は
+              <a href="https://twitter.com/catnose99">Twitter</a>
+              または
+              <a href="https://github.com/catnose99">GitHub</a>
+              からお気軽にご連絡ください。
             </p>
           </div>
           <div className="about__actions">
